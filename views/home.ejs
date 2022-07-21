@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My PAYapi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Cairo&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script src="https://kit.fontawesome.com/27551d6060.js" crossorigin="anonymous"></script>
+
+<style>
+    .body{
+        background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 95%);
+font-family: 'Cairo', sans-serif;
+
+
+   }
+   .para{
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem !important;
+    
+    /* text-align:center */
+   }
+
+  .bgno{
+      background-color: transparent;
+      outline: none;
+      border: none;
+  }
+  .bgno:hover {
+      background: none;
+      outline: none;
+  }
+  .col{
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+   
+  }
+  .ctr{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+
+  @media (min-width: 1199.98px) { 
+    .hero{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+       
+   }
+
+
+
+</style>
+
+
+
+
+<!-- 
+<nav class="navbar navbar-expand-lg bg-light body">
+  <nav class="navbar bg-light mx-3">
+      <div class="container ">
+        <a class="Pay-Api" href="/">
+          <img width="90px" height="40px" src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/logo.svg" alt="" width="30" height="24">
+        </a>
+      </div>
+    </nav>
+  <div class="container-fluid body">
+      <button class="navbar-toggler mt-3 mb-3 mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="navbar-brand" href="/pricing">Pricing</a>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand"  href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navbar-brand" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu bgno" aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+        <button class="btn btn-outline-success btn-lg rounded-5" type="button">Schedule a Demo</button>
+     
+    </div>
+  </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <body class="body">
+    <nav class="navbar navbar-expand-lg bg-light body">
+        <nav class="navbar bgno mx-3">
+        <!-- <nav class="navbar bg-light border rounded-3 mx-3"> -->
+            <div class="container">
+              <a class="Pay-Api" href="/">
+                <img width="auto" height="35px" src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/logo.svg" alt="" width="30" height="24">
+              </a>
+            </div>
+          </nav>
+        <div class="container-fluid body">
+            <button class="navbar-toggler mt-3 mb-3 mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand fw-bolder" href="/pricing">Pricing</a>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand fw-bolder"  href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand fw-bolder" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbar-brand fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu bgno" aria-labelledby="navbarDropdown" >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+              <button class="btn btn-outline-primary btn-lg rounded-5 fw-bolder" style="margin-right: 3em;" type="button">Schedule a Demo</button>
+           
+          </div>
+        </div>
+      </nav> 
+
+
+
+
+
+
+
+      <div class="container mb-2">
+        <div class="row gx-2 ctr mt-4 ">
+            <div class="col-8 col-md-4 redtxt">
+    <img src="https://raw.githubusercontent.com/helphop/payapi-multi-page-website/fc3e5180a5c47008fddf3203fd1691be840b5695/assets/home/desktop/illustration-phone-mockup.svg" class="img-fluid " alt="...">
+                
+            </div>
+             <div class="col-sm-12 col-md-8 mt-2 pt-2 ctr">
+                <div class="card-body ctr mt-3 pt-3">
+                    <h3 class="fs-1 para fw-bolder ">Start Building with our APIs for absolutely free.</h3>
+                    <p class="card-text fs-5 ">We offer online invoicing system that makes digital invoicing easy for the clients. It allows the merchant to send invoices with different payment methods, gives option to pay in parts, sends automatically reminders if needed and creates reports for following the sales.</p>
+                    <p class="card-text fs-5">We offer online invoicing system that makes digital invoicing easy for the clients. It allows the merchant to send invoices with different payment methods, gives option to pay in parts, sends automatically reminders if needed and creates reports for following the sales.</p>
+                    <label for="exampleInputEmail1" class="form-label" ></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                  <a href="#" class="btn btn-primary m-4">Schedule a Demo</a>
+                  <p class="card-text"><small class="text-muted">Have any query? Contact Us</small></p>
+                </div>
+                </div>
+
+              </div>
+          </div>
+   
+   
+    <!-- <div class="container ctr">
+     
+      <div class="col ctr">
+    <img src="https://raw.githubusercontent.com/helphop/payapi-multi-page-website/fc3e5180a5c47008fddf3203fd1691be840b5695/assets/home/desktop/illustration-phone-mockup.svg" class="img-fluid rounded float-end img-responsive " alt="...">
+</div>
+
+
+    <div class=" col card m-5 p-3 bgno ctr" style="width: 42rem; height: 25rem">
+        <div class="card-body ctr">
+            <p class="fs-1 para fw-bold ">Start Building with our APIs for absolutely free.</p>
+          <label for="exampleInputEmail1" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <a href="#" class="btn btn-primary m-2">Schedule a Demo</a>
+          <p class="card-text"><small class="text-muted">Have any query? Contact Us</small></p>
+        </div>
+      </div> -->
+      
+
+  
+
+
+
+
+
+
+<!-- picsvala -->
+           <!-- <div class="container ">
+            <div class="row gx-5">
+              <div class="col">
+               <div class="col p-3 border bg-light">
+                 <img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/tesla.svg" class="img-fluid" alt="..."></div>
+              </div>
+              <div class="col">
+                <div class="p-3 border bg-light">Custom column padding</div>
+              </div>
+            </div>
+          </div> 
+
+
+
+           
+        </div>
+      </div>  -->
+
+
+
+      <div class="container border-top pt-4">
+        <div class="row gx-2 ctr ">
+            <div class="col-8 col-md-4 redtxt">
+            <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/illustration-easy-to-implement2.svg" alt="" class="img-fluid">
+            </div>
+             <div class="col-sm-12 col-md-8 ctr pt-4">
+                <div class="card-body ctr ">
+                    <h3 class="fs-1 para fw-bold mt-2 ">Easy to Implement</h3>
+                    <p>Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
+                    <p>Save time by creating a client list that you can use for each time you send out an invoice. Keep it updated easily.</p>
+                </div>
+                </div>
+
+              </div>
+          </div>
+
+
+<br>
+          
+      <div class="container mb-5 mt-3 border-top border-bottom py-4">
+        <div class="row gx-2 ctr ">
+          <div class="col-12 col-md-4 redtxt pt-5 mt-3">
+            <div class="card-body ctr ">
+                <h3 class="fs-1 para fw-bold mt-2">Simple UI & UX</h3>
+                <p>Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.</p>
+                <p>If you have clients and you need to send invoices, PayApi is for you. It´s easy to use and it helps you to follow the status of the invoices in real-time.</p>
+            </div>
+            </div>
+            <div class="col-sm-8 col-md-8 ctr pt-4">
+              <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/illustration-simple-ui2.svg" alt="" class="img-fluid">
+              </div>
+        </div>
+          </div>
+<!-- 
+      <div class="container m-3">
+        <div class="row">
+          <div class="col ">
+            <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/illustration-easy-to-implement2.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col mt-5">
+            <h3 class="para">Easy to Implement</h3>
+            <p>Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease</p>
+          </div>
+          </div> -->
+
+      
+        
+          <div class="container my-5" style="width: auto; height: auto;">
+            <div class="row">
+              <div class="col">
+               <h4 class="para text-center">Who We Work With? </h4>
+                <p class="fs-4 text-center">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. About Us</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-outline-dark rounded-5">About Us</button></div>
+              </div>
+              
+      
+               
+            </div>
+          </div>
+
+
+
+
+<!-- logos -->
+      <div class="container my-4">
+        <div class=" row row-cols-3 ">
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/tesla.svg" class="img-fluid" alt="..."></div>
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/microsoft.svg" class="img-fluid" alt="..."></div>
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/hewlett-packard.svg" class="img-fluid" alt="..."></div>
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/oracle.svg" class="img-fluid" alt="..."></div>
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/google.svg" class="img-fluid" alt="..."></div>
+          <div class="col"><img src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/nvidia.svg" class="img-fluid" alt="..."></div>
+         </div>
+        </div>
+  
+
+
+<!--finances--> 
+
+      <div class="container ">
+      <div class="row d-flex flex-row">
+        <div class="col d-flex justify-content-center">
+      <div class="card bgno" style="width: 12rem;">
+        <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/icon-personal-finances.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Personal Finances</h5>
+          <p class="card-text">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account.</p>
+        </div>
+      </div>
+    </div>
+      
+        <div class="col d-flex justify-content-center">
+      <div class="card bgno" style="width: 12rem;">
+        <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/icon-banking-and-coverage.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Banking & Coverage</h5>
+          <p class="card-text">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+      
+        <div class="col d-flex justify-content-center">
+      <div class="card bgno" style="width: 12rem;">
+        <img src="https://payapi-multi-page-website.vercel.app/assets/home/desktop/icon-consumer-payments.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Consumer Payments</h5>
+          <p class="card-text">It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
+        </div>
+      </div>
+    </div>
+      
+      </div>
+      </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
+
+  <footer class="footer bg-dark  mt-auto">
+    <div class="container bg-dark pt-4">
+        <div class="row ">
+            <div class="col-4 "> 
+              <a class="Pay-Api" href="/">
+                <img width="90px" height="40px" src="https://payapi-multi-page-website.vercel.app/assets/shared/desktop/logo.svg" alt="" width="30" height="24" class="bg-light border rounded-3">
+              </a></div>
+
+
+            
+            <div class=" col-2 ctr">
+              <i class="icon-cog fa-2x fa-brands fa-facebook-square" style="color:white"></i>
+            </div>
+            <div class=" col-2 ctr">
+              <i class="icon-cog fa-2x fa-brands fa-twitter" style="color:white"></i>
+            </div>
+            <div class=" col-2 ctr">
+              <i class="icon-cog fa-2x fa-brands fa-instagram" style="color:white"></i>
+            </div>
+            <div class=" col-2 ctr">
+              <i class="icon-cog fa-2x fa-brands fa-linkedin" style="color:white"></i>
+            </div>
+          
+        <span class="text-muted text-success">&copy; PAYapi 2020</span>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
